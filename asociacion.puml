@@ -1,0 +1,16 @@
+@startuml
+class Estudiante{
+#nombre : String
++ Estudiante(nombre : String)
++ getNombre():String
+}
+class Profesor{
+-nombre : String
+-estudiante : Estudiante
++Profesor(nombre : String, estudiante : Estudiante)
++ensenar() : void
+}
+Profesor --- Estudiante
+
+
+@enduml

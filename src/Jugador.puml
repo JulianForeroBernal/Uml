@@ -1,0 +1,13 @@
+@startuml
+class Jugador{
+-nombre : String
++Jugador(nombre : String)
+}
+class Equipo{
+- jugadores : ArrayList<Jugador>
++Equipo();
++agregarJugador(j : Jugador): void
+}
+
+Equipo o-- Jugador
+@enduml

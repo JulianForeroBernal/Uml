@@ -1,0 +1,9 @@
+@startuml
+class Motor{
++arrancar() : void
+}
+class Auto{
++arrancarMotor(motor : Motor) : void
+}
+Motor <... Auto
+@enduml

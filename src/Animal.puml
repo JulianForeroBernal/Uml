@@ -1,0 +1,19 @@
+@startuml
+class Animal{
+# nombre : String
+# edad : int
++ Animal(nombre, edad)
++ comer() : void
++ hacerSonido() : void
+}
+
+class Perro{
+- raza : String
++ Perro(nombre, edad, raza)
++ ladrar() : void
++ hacerSonido() : void
+}
+
+Animal <|-- Perro
+
+@enduml

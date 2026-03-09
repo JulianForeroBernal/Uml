@@ -1,0 +1,15 @@
+@startuml
+class Casa{
+- habitacion : Habitacion
++Casa()
++getHabitacion() : Habitacion
+}
+class Habitacion{
+-nombre : String
++Habitacion(nombre : String)
++getNombre() : String
+}
+
+Casa *-- Habitacion
+
+@enduml
